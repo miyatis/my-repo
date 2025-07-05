@@ -1,0 +1,10 @@
+name: Schedule # ワークフロー名
+on:
+  schedule: # 定期実行のイベント
+    - cron: '/15 * * * *' # 15分ごとに実行
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
+
