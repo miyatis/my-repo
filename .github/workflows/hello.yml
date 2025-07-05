@@ -5,7 +5,7 @@ jobs: # ジョブの定義
     runs-on: ubuntu-latest # ランナー (Ubuntuで実行)
     steps: # ステップの定義
       - name: Hello World # ステップ名
-        run: echo "Hello, World!" # 実行するコマンド
+          run: echo "Hello, World!" # 実行するコマンド
       - name: Hello GitHub # 別のステップ
         run: echo "Hello, GitHub!" # 別のコマンド
 
