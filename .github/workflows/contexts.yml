@@ -5,4 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.actor }}" # githubコンテキストの参照
+      - run: echo "${{ github.run_id }}" # ワークフロー実行IDの参照
+      - run: echo "${{ github.head_ref }}" # ブランチ名の参照
+      - run: echo "${{ github.workspace }}" # ワークスペースのパスの参照
+      - run: echo "${{ github.repository }}" # リポジトリ名の参照
+      - run: echo "${{ github.repository_owner }}" # リポジトリ所有者の参照
+      - run: echo "${{ github.event.pull_request.title }}" # イベントの参照
 
