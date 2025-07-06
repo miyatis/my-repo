@@ -1,0 +1,13 @@
+name: Runner Context
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Runner context information:"
+      - run: echo "Runner name: ${{ runner.name }}"
+      - run: echo "Runner OS: ${{ runner.os }}"
+      - run: echo "Runner arch: ${{ runner.arch }}"
+      - run: echo "Runner temp: ${{ runner.temp }}"
+      - run: echo "Runner tool_cache: ${{ runner.tool_cache }}"
+      - run: echo "Runner debug: ${{ runner.debug }}"
