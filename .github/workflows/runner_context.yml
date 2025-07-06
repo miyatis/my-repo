@@ -10,4 +10,4 @@ jobs:
       - run: echo "Runner arch: ${{ runner.arch }}"
       - run: echo "Runner temp: ${{ runner.temp }}"
       - run: echo "Runner tool_cache: ${{ runner.tool_cache }}"
-      - run: echo "Runner debug: ${{ runner.debug }}"
+      # - run: echo "Runner debug: ${{ runner.debug }}"
