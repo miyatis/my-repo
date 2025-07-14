@@ -11,4 +11,5 @@ jobs:
       - run: echo "${{ github.repository }}" # リポジトリ名の参照
       - run: echo "${{ github.repository_owner }}" # リポジトリ所有者の参照
       - run: echo "${{ github.event.pull_request.title }}" # イベントの参照
+      - run: echo "${{ GITHUB_ACTOR }}" # githubのデフォルトの環境変数の参照
 
